@@ -1,0 +1,57 @@
+.jcgmt-container {
+    /* float:left; */
+    /* padding: 3px; */
+    display: block;
+    margin: auto;
+    width: 250px;
+    padding-bottom: 0.5rem;
+}
+.jcgmt-container .jcgmt-lbl {
+	display:none;
+    font-size:10px;
+    color: #333333;
+    line-height: 22px;
+    /* background: url(../images/jcgmt-clock_label.png) no-repeat;  */
+    text-align: center;
+    padding-bottom: 5px;
+    width: 108px;
+    margin: 0 auto;
+}
+.jcgmt-clockHolder {
+    width:150px; 
+    margin:0 auto;
+    position:relative;
+    overflow: hidden;
+
+}
+.jcgmt-sec,
+.jcgmt-min,
+.jcgmt-hour {
+    display:block;
+    position:absolute;
+}
+
+.jcgmt-rotatingWrapper {
+
+    position:absolute;
+    width:130px;
+    height:130px;
+    margin: 13% 13% auto;
+}
+.jcgmt-digital,
+.jcgmt-date {
+    
+    font-weight:500;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align:center;
+    padding-top: 3rem;
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 250px;
+    display: none;
+
+}
+
+

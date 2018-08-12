@@ -1,0 +1,37 @@
+{
+  "name": "jweather",
+  "description": "A jQuery plugin used to display the current weather of any city using Yahoo-Weather.",
+  "version": "1.1.0",
+  "main": [
+    "src/jweather.js",
+    "src/css/jweather.css"
+  ],
+  "keywords": [
+    "weather",
+    "yahoo",
+    "YahooWeather",
+    "jquery"
+  ],
+  "authors": [
+    "Ivan Sotelo <ivan_sotelo@deskode.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "README*",
+    "LICENSE*",
+    "_config.yml",
+    ".git*",
+    "demo",
+    "bower.json",
+    "**/.*",
+    "bower_components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IvanSotelo/JWeather.git"
+  },
+  "dependencies": {
+    "jquery": "latest",
+    "JWeather": "*"
+  }
+}

@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Petrona';
+  src: url('../fonts/Petrona/petrona-regular-webfont.woff2') format('woff2'),
+       url('../fonts/Petrona/petrona-regular-webfont.woff') format('woff'),
+       url('../fonts/Petrona/Petrona-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #495057;
+  line-height: 1.2;
+  font-size: 1rem;
+  font-family: 'Petrona', Arial, Helvetica, sans-serif;
+
+  }
+ 
+  .list-group {
+    margin: 1rem 0.5rem;
+    
+  }
+
+  .list-group-item {
+    min-height: 238px;
+    border: none !important;
+  }
+
+  .media .h2 {
+    font-weight: 600;
+    font-size: 3em;
+  }
+
+  .media img {
+    height: 100px;
+
+  }
+  

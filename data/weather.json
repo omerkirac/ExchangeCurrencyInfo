@@ -1,0 +1,32 @@
+{
+    "ISTANBUL": {
+        "isDay": false,
+        "conditionCode": "40",
+        "temperature": "10"
+    },
+    "LONDON": {
+        "isDay": true,
+        "conditionCode": "30",
+        "temperature": "18"
+    },
+    "HONGKONG": {
+        "isDay": true,
+        "conditionCode": "46",
+        "temperature": "35"
+    },
+    "NEWYORK": {
+        "isDay": false,
+        "conditionCode": "28",
+        "temperature": "31"
+    },
+    "SHANGHAI": {
+        "isDay": true,
+        "conditioncode": "23",
+        "temperature": "32"
+    },
+    "SANFRANCISCO": {
+        "isDay": false,
+        "conditionCode": "29",
+        "temperature": "11"
+    }
+}
