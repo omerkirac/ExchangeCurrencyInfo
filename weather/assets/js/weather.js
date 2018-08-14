@@ -135,5 +135,8 @@
                 },
                     2 * 1000);
             });
+        jQuery.ajaxSetup({
+            cache: false
+        });
     }
 })(jQuery);

@@ -81,22 +81,27 @@
                     $("#temp").html(weather.ISTANBUL.temperature + "  <sup>°C</sup>");
                     $("#istanbulIcon").addClass(codes[weather.ISTANBUL.conditionCode]);
                 });
+            jQuery.ajaxSetup({
+                cache: false
+            });
         });
     }
 
     function updateCurencies() {
-        var dataDoviz = "../data/currency.json";
+        var dataDoviz = "../data/currencyData.json";
         $(document).ready(function () {
             $.getJSON(dataDoviz, function (gelen) { })
                 .done(function (gelen) {
                     var doviz = gelen;
-                    $("#usd_value").text(doviz.USD.selling);
-                    $("#eur_value").text(doviz.EUR.selling);
-                    $("#usd_name").text(doviz.USD.name);
-                    $("#eur_name").text(doviz.EUR.name);
-                    $("#usd_symbol").text(doviz.USD.symbol);
-                    $("#eur_symbol").text(doviz.EUR.symbol);
+                    $("#usd_value").text(doviz.DOLAR.price);
+                    $("#eur_value").text(doviz.EURO.price);
                 });
+            jQuery.ajaxSetup({
+                cache: false
+            });
         });
     }
 })(jQuery);
+
+
+
