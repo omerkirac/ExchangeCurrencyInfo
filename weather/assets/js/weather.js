@@ -1,7 +1,12 @@
 (function ($) {
 
     $(document).ready(function () {
+        jQuery.ajaxSetup({
+            cache: false
+        });
+
         updateWeather();
+
     });
 
     setInterval(function () {
@@ -129,14 +134,11 @@
                 $("#sanfranciscoTemp").html(weather.SANFRANCISCO.temperature + " <sup>°C</sup>");
                 $("#sanfranciscoIcon").addClass(codes[weather.SANFRANCISCO.conditionCode
                 ]);
-
                 setTimeout(function () {
                     clocks();
                 },
                     2 * 1000);
             });
-        jQuery.ajaxSetup({
-            cache: false
-        });
+
     }
 })(jQuery);

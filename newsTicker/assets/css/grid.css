@@ -1,0 +1,30 @@
+
+
+body {
+  color: #495057;
+  line-height: 1.2;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+  }
+ 
+  .list-group {
+    margin: 1rem 0.5rem;
+    
+  }
+
+  .list-group-item {
+    min-height: 238px;
+    border: none !important;
+  }
+
+  .media .h2 {
+    font-weight: 600;
+    font-size: 3em;
+  }
+
+  .media img {
+    height: 60px;
+
+  }
+  

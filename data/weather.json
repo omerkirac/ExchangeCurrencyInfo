@@ -21,7 +21,7 @@
     },
     "SHANGHAI": {
         "isDay": true,
-        "conditioncode": "23",
+        "conditionCode": "23",
         "temperature": "32"
     },
     "SANFRANCISCO": {

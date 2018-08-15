@@ -1,0 +1,58 @@
+.currency-container{
+    min-height: 307px;
+    width: 100%;
+    padding-top: 116px;
+}
+.currency-flow-container{
+    min-height: 86px;
+}
+.currency-body{
+    margin-left: 1.2rem;
+    width: 150px;
+    overflow: visible;
+}
+.updown-icon{
+    margin-top: 40px;
+    margin-left: -30px;
+}
+
+
+/* 35. WEBTICKERS */
+.tickercontainer {
+    width: 100%;
+}
+.tickers-black-sm .tickercontainer {
+    background-color: #051E47;
+    color: #fff;
+    left: 0;
+    right: 0;
+}
+.tickers-white-indicative .tickercontainer, 
+.tickers-white-lg .tickercontainer, 
+.tickers-white-sm .tickercontainer, 
+.tickers-black-indicative .tickercontainer, 
+.tickers-black-lg .tickercontainer,
+.irs-from::after, 
+.irs-to::after, 
+.irs-single::after {
+    border-top-color: #ffd500;
+}
+.tickers-black-sm .tickercontainer li .coin-value {
+  color: #ffd600;
+}
+.tickers-black-sm.crypto-ticker {
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    box-shadow: 20px 5px 0px 5px rgba(0, 0, 0, 0.05) !important;
+}
+.tickers-black-sm .tickercontainer li {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 90px;
+    margin-right: 15px;
+}
+ul#webticker-dark-icons li i {
+  font-size: 14px;
+}
+

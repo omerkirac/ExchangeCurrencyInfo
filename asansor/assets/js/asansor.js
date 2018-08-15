@@ -1,19 +1,24 @@
 (function ($) {
     $(document).ready(function () {
+        jQuery.ajaxSetup({
+            cache: false
+        });
+
         $('#clock_istanbul').jClocksGMT({
             title: 'İstanbul, TR',
             date: 'today',
             offset: '+3',
         });
-        // weather();
+
+        // Currency 
+        updateCurencies();
+        self.setInterval(updateCurencies, 5 * 60 * 1000);
+
+        updateWeather();
+        self.setInterval(updateWeather, 5 * 60 * 1000);
     });
 
-    // Currency 
-    updateCurencies();
-    self.setInterval(updateCurencies, 5 * 60 * 1000);
 
-    updateWeather();
-    self.setInterval(updateWeather, 5 * 60 * 1000);
 
 
 
@@ -74,32 +79,22 @@
 
     function updateWeather() {
         var dataWeather = "../data/weather.json";
-        $(document).ready(function () {
-            $.getJSON(dataWeather, function (gelen) { })
-                .done(function (gelen) {
-                    var weather = gelen;
-                    $("#temp").html(weather.ISTANBUL.temperature + "  <sup>°C</sup>");
-                    $("#istanbulIcon").addClass(codes[weather.ISTANBUL.conditionCode]);
-                });
-            jQuery.ajaxSetup({
-                cache: false
+        $.getJSON(dataWeather, function (gelen) { })
+            .done(function (gelen) {
+                var weather = gelen;
+                $("#temp").html(weather.ISTANBUL.temperature + "  <sup>°C</sup>");
+                $("#istanbulIcon").addClass(codes[weather.ISTANBUL.conditionCode]);
             });
-        });
     }
 
     function updateCurencies() {
         var dataDoviz = "../data/currencyData.json";
-        $(document).ready(function () {
-            $.getJSON(dataDoviz, function (gelen) { })
-                .done(function (gelen) {
-                    var doviz = gelen;
-                    $("#usd_value").text(doviz.DOLAR.price);
-                    $("#eur_value").text(doviz.EURO.price);
-                });
-            jQuery.ajaxSetup({
-                cache: false
+        $.getJSON(dataDoviz, function (gelen) { })
+            .done(function (gelen) {
+                var doviz = gelen;
+                $("#usd_value").text(doviz.DOLAR.price);
+                $("#eur_value").text(doviz.EURO.price);
             });
-        });
     }
 })(jQuery);
 

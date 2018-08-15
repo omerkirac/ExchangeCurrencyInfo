@@ -1,0 +1,64 @@
+/* nt-example1 */
+
+#nt-example1 {
+	width: 100%;
+	height : 980px !important;
+	margin-bottom: -1px;
+}
+
+#nt-example1-container {
+	
+}
+#nt-example1-container ul {
+	
+	-webkit-padding-start: 0 !important;
+}
+
+#nt-example1-container i {
+	font-size: 36px;
+	font-weight: bold;
+	margin: 8px;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#nt-example1-container i:hover {
+	color: #333;
+}
+
+#nt-example1 li {
+	text-align: center;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-bottom: 1rem;
+  padding: 1rem !important;
+  border: 1px solid rgb(211, 211, 211);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #333;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(254,254,254,1);
+  background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 48%, rgba(209,209,209,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(48%, rgba(226,226,226,1)), color-stop(100%, rgba(209,209,209,1)));
+  background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 48%, rgba(209,209,209,1) 100%);
+  background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 48%, rgba(209,209,209,1) 100%);
+  background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 48%, rgba(209,209,209,1) 100%);
+  background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 48%, rgba(209,209,209,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d1d1d1', GradientType=0 );
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.3) ;
+}

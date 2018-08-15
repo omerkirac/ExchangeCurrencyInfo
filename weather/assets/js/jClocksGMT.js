@@ -384,12 +384,12 @@
 
                     const element = $('#' + id);
                     if (options.isDay) {
-                        $(element).parent().removeClass("night");
-                        $(element).parent().addClass("sunny");
-                    }
-                    else {
                         $(element).parent().removeClass("sunny");
                         $(element).parent().addClass("night");
+                    }
+                    else {
+                        $(element).parent().removeClass("night");
+                        $(element).parent().addClass("sunny");
                     }
                 }
                 // clock interval
